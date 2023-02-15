@@ -17,3 +17,12 @@ end
 # require_relative 'lib/car'
 # => true
 # This will let you interact with the code you've written in those files from within IRB.
+# We can even see what the parent class of Vehicle is, and up as far as we can go 
+# on the inheritance chain to the very top (BasicObject):
+
+# Car.superclass.superclass
+# => Object
+# Car.superclass.superclass.superclass
+# => BasicObject
+# Car.superclass.superclass.superclass.superclass
+# => nil
